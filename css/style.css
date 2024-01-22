@@ -1,0 +1,119 @@
+/* pseudo elements */
+.hello::before {
+    content: 'BTU';
+    color: red;
+    background-color: yellow;
+}
+
+/* .hello::after {
+    content: '';
+    width: 2px;
+    height: 30px;
+    background-color: blue;
+    display: inline-block;
+    margin-left: 30px;
+} */
+.hello::after {
+    content: '\00a9';
+}
+
+.li-item {
+    display: inline-block;
+}
+.header-wraper {
+    background-color: lightgreen;
+    padding: 30px;
+}
+.a-item-nav {
+    position: relative;
+}
+.a-item-nav::after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background-color: blue;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    transition: all 0.8s;
+}
+.a-item-nav:hover::after {
+    width: 60%;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: #40DDB6;
+    opacity: 75%;
+}
+
+/* flexbox */
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+.flex-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* practice flex */
+.container {
+    width: 1336px;
+    background-color: lightpink;
+    margin: 0 auto;
+}
+.text-block {
+    background-color: blueviolet;
+    width: 760px;
+    text-align: center;
+    margin: 0 auto;
+}
+.block {
+    width: 310px;
+    background-color: #40DDB6;
+    height: 430px;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 908px;
+}
+.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+.social-block {
+    width: 36px;
+    height: 36px;
+    background-color: #F2F4F7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
